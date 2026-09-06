@@ -1,0 +1,17 @@
+[
+    {
+        "timestamp": "2026-09-06 11:35:39",
+        "role": "user",
+        "message": "Mi proyecto se llama JARVIS."
+    },
+    {
+        "timestamp": "2026-09-06 11:36:48",
+        "role": "user",
+        "message": "Mi nombre es Elix y estoy construyendo JARVIS."
+    },
+    {
+        "timestamp": "2026-09-06 11:36:56",
+        "role": "assistant",
+        "message": "Encantado, Elix. Es un placer acompañarte en la construcción de JARVIS. Puedo ayudarte con la arquitectura, programación, integración de voz, automatización del escritorio, memoria, interfaz o cualquier otro componente del proyecto."
+    }
+]
