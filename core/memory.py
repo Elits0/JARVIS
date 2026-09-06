@@ -85,3 +85,74 @@ class Memory:
     def get_history(self) -> List[Dict[str, str]]:
 
         return self.history
+
+    def search(self, query: str) -> List[Dict[str, str]]:
+
+        query = query.lower().strip()
+
+        if not query:
+            return []
+
+        stop_words = {
+            "el", "la", "los", "las",
+            "un", "una", "unos", "unas",
+            "de", "del", "al", "a",
+            "en", "y", "o",
+            "que", "qué",
+            "como", "cómo",
+            "es",
+            "mi", "mis",
+            "tu", "tus",
+            "me", "te", "se",
+            "su", "sus",
+            "por", "para",
+            "con", "sobre",
+            "cuál", "cuáles",
+            "dime",
+            "háblame"
+        }
+
+        words = [
+            word.strip("¿?¡!.,;:()[]{}")
+            for word in query.split()
+        ]
+
+        keywords = [
+            word
+            for word in words
+            if word and word not in stop_words
+        ]
+
+        if not keywords:
+            return []
+
+        results = []
+
+        for memory in self.history:
+
+            message = memory.get(
+                "message",
+                ""
+            ).lower()
+
+            score = 0
+
+            for keyword in keywords:
+
+                if keyword in message:
+                    score += 1
+
+            if score > 0:
+                results.append(
+                    (score, memory)
+                )
+
+        results.sort(
+            key=lambda item: item[0],
+            reverse=True
+        )
+
+        return [
+            memory
+            for score, memory in results
+        ]

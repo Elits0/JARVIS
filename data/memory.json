@@ -13,5 +13,35 @@
         "timestamp": "2026-09-06 11:36:56",
         "role": "assistant",
         "message": "Encantado, Elix. Es un placer acompañarte en la construcción de JARVIS. Puedo ayudarte con la arquitectura, programación, integración de voz, automatización del escritorio, memoria, interfaz o cualquier otro componente del proyecto."
+    },
+    {
+        "timestamp": "2026-09-06 11:40:33",
+        "role": "user",
+        "message": "¿Cómo se llama mi proyecto?"
+    },
+    {
+        "timestamp": "2026-09-06 11:40:35",
+        "role": "assistant",
+        "message": "No tengo registrado el nombre de tu proyecto."
+    },
+    {
+        "timestamp": "2026-09-06 11:41:50",
+        "role": "user",
+        "message": "¿Cómo se llama mi proyecto?"
+    },
+    {
+        "timestamp": "2026-09-06 11:41:52",
+        "role": "assistant",
+        "message": "No tengo registrado el nombre de tu proyecto."
+    },
+    {
+        "timestamp": "2026-09-06 11:45:08",
+        "role": "user",
+        "message": "¿Cómo se llama mi proyecto?"
+    },
+    {
+        "timestamp": "2026-09-06 11:45:10",
+        "role": "assistant",
+        "message": "Tu proyecto se llama **JARVIS**."
     }
 ]

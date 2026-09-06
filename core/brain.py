@@ -24,7 +24,9 @@ class Brain:
                     "Habla de forma humana y conversacional.\n"
                     "Mantén el contexto de la conversación.\n"
                     "Sé conciso cuando la pregunta sea sencilla "
-                    "y más detallado cuando sea necesario."
+                    "y más detallado cuando sea necesario.\n\n"
+                    "Puedes utilizar recuerdos de conversaciones "
+                    "anteriores cuando sean relevantes."
                 )
             }
         ]
@@ -37,7 +39,33 @@ class Brain:
             user_message
         )
 
-        # Añadir a contexto temporal
+        # Buscar recuerdos relacionados
+        memories = self.memory.search(user_message)
+
+        # Añadir recuerdos relevantes
+        if memories:
+
+            memory_context = "\n".join(
+                [
+                    f"- {memory['role']}: {memory['message']}"
+                    for memory in memories[-10:]
+                ]
+            )
+
+            self.conversation.append(
+                {
+                    "role": "developer",
+                    "content": (
+                        "Estos son recuerdos relevantes de "
+                        "conversaciones anteriores:\n\n"
+                        f"{memory_context}\n\n"
+                        "Utilízalos únicamente si son relevantes "
+                        "para responder al usuario."
+                    )
+                }
+            )
+
+        # Añadir mensaje actual
         self.conversation.append(
             {
                 "role": "user",
@@ -45,7 +73,7 @@ class Brain:
             }
         )
 
-        # Pensamiento de JARVIS
+        # Generar respuesta
         response = self.client.responses.create(
             model=self.model,
             input=self.conversation
