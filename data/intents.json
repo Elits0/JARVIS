@@ -1,0 +1,92 @@
+{
+    "intents": [
+        {
+            "name": "saludo",
+            "examples": [
+                "hola",
+                "hola jarvis",
+                "buenos días",
+                "buenas tardes",
+                "buenas noches",
+                "qué tal",
+                "cómo estás",
+                "hey jarvis"
+            ]
+        },
+        {
+            "name": "despedida",
+            "examples": [
+                "adiós",
+                "hasta luego",
+                "nos vemos",
+                "me voy",
+                "terminamos",
+                "hasta mañana"
+            ]
+        },
+        {
+            "name": "identidad",
+            "examples": [
+                "quién eres",
+                "qué eres",
+                "cómo te llamas",
+                "preséntate",
+                "eres jarvis",
+                "cuál es tu nombre"
+            ]
+        },
+        {
+            "name": "memoria",
+            "examples": [
+                "qué recuerdas de mí",
+                "qué sabes de mí",
+                "recuerdas mi nombre",
+                "recuerdas mi proyecto",
+                "qué proyecto estoy haciendo",
+                "cómo se llama mi proyecto"
+            ]
+        },
+        {
+            "name": "estado",
+            "examples": [
+                "cómo estás",
+                "cómo te encuentras",
+                "estás funcionando",
+                "todo está bien",
+                "cuál es tu estado"
+            ]
+        },
+        {
+            "name": "agradecimiento",
+            "examples": [
+                "gracias",
+                "muchas gracias",
+                "te agradezco",
+                "gracias jarvis",
+                "eres genial"
+            ]
+        },
+        {
+            "name": "ayuda",
+            "examples": [
+                "ayúdame",
+                "necesito ayuda",
+                "qué puedes hacer",
+                "qué sabes hacer",
+                "qué funciones tienes",
+                "muéstrame tus funciones"
+            ]
+        },
+        {
+            "name": "apagado",
+            "examples": [
+                "apágate",
+                "apaga sistemas",
+                "apagar sistema",
+                "cierra jarvis",
+                "termina",
+                "salir"
+            ]
+        }
+    ]
+}

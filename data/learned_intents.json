@@ -1,0 +1,17 @@
+[
+    {
+        "intent": "modo_estudio",
+        "examples": [
+            "activa el modo estudio",
+            "ponme en modo estudio",
+            "vamos a estudiar",
+            "modo estudio"
+        ],
+        "action": {
+            "type": "open_app",
+            "apps": [
+                "code"
+            ]
+        }
+    }
+]
