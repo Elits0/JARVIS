@@ -66,7 +66,21 @@ class LearningSystem:
                 indent=4
             )
 
-    def learn(
+    def get_intent(
+        self,
+        intent: str
+    ) -> Optional[Dict]:
+
+        intent = intent.strip().lower()
+
+        for item in self.learned_intents:
+
+            if item.get("intent") == intent:
+                return item
+
+        return None
+
+    def create_intent(
         self,
         intent: str,
         example: str,
@@ -79,24 +93,8 @@ class LearningSystem:
         if not intent or not example:
             return False
 
-        for item in self.learned_intents:
-
-            if item.get("intent") == intent:
-
-                examples = item.setdefault(
-                    "examples",
-                    []
-                )
-
-                if example not in examples:
-                    examples.append(example)
-
-                if action is not None:
-                    item["action"] = action
-
-                self.save()
-
-                return True
+        if self.get_intent(intent):
+            return False
 
         new_intent = {
             "intent": intent,
@@ -114,19 +112,47 @@ class LearningSystem:
 
         return True
 
-    def get_intent(
+    def add_example(
         self,
-        intent: str
-    ) -> Optional[Dict]:
+        intent: str,
+        example: str
+    ):
 
         intent = intent.strip().lower()
+        example = example.strip()
 
-        for item in self.learned_intents:
+        item = self.get_intent(intent)
 
-            if item.get("intent") == intent:
-                return item
+        if not item or not example:
+            return False
 
-        return None
+        examples = item.setdefault(
+            "examples",
+            []
+        )
+
+        if example not in examples:
+            examples.append(example)
+            self.save()
+
+        return True
+
+    def update_action(
+        self,
+        intent: str,
+        action: Dict
+    ):
+
+        item = self.get_intent(intent)
+
+        if not item:
+            return False
+
+        item["action"] = action
+
+        self.save()
+
+        return True
 
     def get_action(
         self,

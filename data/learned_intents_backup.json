@@ -17,9 +17,7 @@
     {
         "intent": "modo_navegacion",
         "examples": [
-            "abre mi navegador",
-            "modo navegador",
-            "abre el navegador"
+            "abre mi navegador"
         ],
         "action": {
             "type": "open_app",
@@ -41,6 +39,18 @@
         }
     },
     {
+        "intent": "abrir_chrome",
+        "examples": [
+            "modo navegador"
+        ],
+        "action": {
+            "type": "open_app",
+            "apps": [
+                "Chrome"
+            ]
+        }
+    },
+    {
         "intent": "silenciar_volumen",
         "examples": [
             "silencio"
@@ -50,21 +60,21 @@
         }
     },
     {
-        "intent": "modo_relajacion",
+        "intent": "modo_trabajo",
         "examples": [
-            "pon música tranquila"
+            "modo trabajo"
         ],
         "action": {
             "type": "open_app",
             "apps": [
-                "Spotify"
+                "Chrome"
             ]
         }
     },
     {
-        "intent": "modo_trabajo",
+        "intent": "navegar",
         "examples": [
-            "modo trabajo"
+            "navegar"
         ],
         "action": {
             "type": "open_app",

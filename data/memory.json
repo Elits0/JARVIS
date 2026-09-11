@@ -43,5 +43,305 @@
         "timestamp": "2026-09-06 11:45:10",
         "role": "assistant",
         "message": "Tu proyecto se llama **JARVIS**."
+    },
+    {
+        "timestamp": "2026-09-07 15:35:06",
+        "role": "user",
+        "message": "Hola, ¿me escuchas?"
+    },
+    {
+        "timestamp": "2026-09-07 15:35:08",
+        "role": "assistant",
+        "message": "Hola. Sí, te escucho perfectamente. ¿En qué puedo ayudarte?"
+    },
+    {
+        "timestamp": "2026-09-07 15:35:17",
+        "role": "user",
+        "message": "Oh, sí. Saluda a mi amiga Leslie."
+    },
+    {
+        "timestamp": "2026-09-07 15:35:18",
+        "role": "assistant",
+        "message": "¡Hola, Leslie! Es un placer saludarte. 👋"
+    },
+    {
+        "timestamp": "2026-09-07 15:35:32",
+        "role": "user",
+        "message": "Ahí está, mira. Y... ya, Jarvis, aprende que cuando yo diga modo música quiero que abras Spotify."
+    },
+    {
+        "timestamp": "2026-09-07 15:35:35",
+        "role": "assistant",
+        "message": "Entendido, Elix. Cuando digas **«modo música»**, interpretaré que quieres abrir **Spotify**."
+    },
+    {
+        "timestamp": "2026-09-07 15:35:46",
+        "role": "user",
+        "message": "Sí."
+    },
+    {
+        "timestamp": "2026-09-07 15:35:48",
+        "role": "assistant",
+        "message": "Perfecto, Elix. ¿Qué necesitas?"
+    },
+    {
+        "timestamp": "2026-09-07 15:35:55",
+        "role": "user",
+        "message": "Ahora sí, modo música."
+    },
+    {
+        "timestamp": "2026-09-07 15:35:58",
+        "role": "assistant",
+        "message": "Modo música activado. No puedo abrir aplicaciones directamente desde este chat, pero puedes iniciar Spotify desde tu escritorio."
+    },
+    {
+        "timestamp": "2026-09-07 15:37:45",
+        "role": "user",
+        "message": "Jarvis, aprende que cuando diga modo trabajo quiero que abras Chrome."
+    },
+    {
+        "timestamp": "2026-09-07 15:37:46",
+        "role": "assistant",
+        "message": "Entendido, Elix. Cuando digas **«modo trabajo»**, interpretaré que quieres abrir **Google Chrome**."
+    },
+    {
+        "timestamp": "2026-09-07 15:37:56",
+        "role": "user",
+        "message": "И-ы-ы..."
+    },
+    {
+        "timestamp": "2026-09-07 15:37:57",
+        "role": "assistant",
+        "message": "¿Todo bien, Elix? Te escucho."
+    },
+    {
+        "timestamp": "2026-09-10 23:10:17",
+        "role": "user",
+        "message": "Hola. Hola, ¿me escuchas?"
+    },
+    {
+        "timestamp": "2026-09-10 23:10:20",
+        "role": "assistant",
+        "message": "Hola, Leslie. Sí, te escucho perfectamente. ¿En qué puedo ayudarte?"
+    },
+    {
+        "timestamp": "2026-09-10 23:10:35",
+        "role": "user",
+        "message": "¿Cómo me llamo?"
+    },
+    {
+        "timestamp": "2026-09-10 23:10:37",
+        "role": "assistant",
+        "message": "Te llamas Leslie."
+    },
+    {
+        "timestamp": "2026-09-10 23:10:44",
+        "role": "user",
+        "message": "¿Me puedes ver? ¿Me estás viendo?"
+    },
+    {
+        "timestamp": "2026-09-10 23:10:46",
+        "role": "assistant",
+        "message": "No, Leslie. No puedo verte ni acceder a tu cámara; solo puedo leer lo que escribes aquí."
+    },
+    {
+        "timestamp": "2026-09-10 23:20:13",
+        "role": "user",
+        "message": "¿Me puedes ver?"
+    },
+    {
+        "timestamp": "2026-09-10 23:20:16",
+        "role": "assistant",
+        "message": "Sí. El sistema visual indica que hay una persona frente a mí, identificada como **ELIX**. No puedo ver detalles más allá de la información visual proporcionada."
+    },
+    {
+        "timestamp": "2026-09-10 23:20:16",
+        "role": "user",
+        "message": "¿Quién está delante de ti?"
+    },
+    {
+        "timestamp": "2026-09-10 23:20:18",
+        "role": "assistant",
+        "message": "Delante de mí estás tú, **ELIX**, según el sistema visual."
+    },
+    {
+        "timestamp": "2026-09-10 23:20:18",
+        "role": "user",
+        "message": "¿Me reconoces?"
+    },
+    {
+        "timestamp": "2026-09-10 23:20:20",
+        "role": "assistant",
+        "message": "Sí, te reconozco como **ELIX**. Según el sistema visual, estás frente a mí."
+    },
+    {
+        "timestamp": "2026-09-10 23:22:03",
+        "role": "user",
+        "message": "¿me puedes ver? Hola, ¿me puedes ver?"
+    },
+    {
+        "timestamp": "2026-09-10 23:22:06",
+        "role": "assistant",
+        "message": "Hola. En este momento no detecto ninguna persona en la imagen, así que no puedo verte. Solo puedo utilizar la información visual que me proporciona el sistema y leer lo que escribes aquí."
+    },
+    {
+        "timestamp": "2026-09-10 23:22:15",
+        "role": "user",
+        "message": "Hola, ¿ahora me puedes ver?"
+    },
+    {
+        "timestamp": "2026-09-10 23:22:17",
+        "role": "assistant",
+        "message": "Sí. El sistema visual detecta a una persona frente a mí, identificada como **ELIX**. No puedo ver detalles adicionales más allá de esa información."
+    },
+    {
+        "timestamp": "2026-09-10 23:22:40",
+        "role": "user",
+        "message": "Ok, ¿qué tal? ¿Qué te parezco? En este caso me llamo Elías."
+    },
+    {
+        "timestamp": "2026-09-10 23:22:43",
+        "role": "assistant",
+        "message": "Muy bien, gracias, Elías. Mucho gusto.\n\nPor lo que transmites en la conversación, pareces una persona curiosa y amable. Visualmente, solo puedo confirmar que hay una persona frente a mí identificada por el sistema como **ELIX**; no puedo valorar tu aspecto ni ver detalles más allá de esa información."
+    },
+    {
+        "timestamp": "2026-09-10 23:23:04",
+        "role": "user",
+        "message": "Ah, ¿por qué no puedes ver más allá de esa información?"
+    },
+    {
+        "timestamp": "2026-09-10 23:23:06",
+        "role": "assistant",
+        "message": "Porque el sistema visual solo me proporciona datos limitados: si hay una persona, su identidad reconocida y la dirección en la que está orientada. No recibo una imagen detallada ni acceso directo a tu cámara, así que no puedo describir tu rostro, ropa, entorno u otros detalles."
+    },
+    {
+        "timestamp": "2026-09-10 23:23:21",
+        "role": "user",
+        "message": "ah, OK. Apaga el sistema."
+    },
+    {
+        "timestamp": "2026-09-10 23:23:25",
+        "role": "assistant",
+        "message": "Entendido. No puedo apagar el sistema directamente desde este chat. Si te refieres a tu ordenador, puedes apagarlo desde el menú de inicio o decirme qué sistema operativo usas y te indico el procedimiento."
+    },
+    {
+        "timestamp": "2026-09-10 23:30:51",
+        "role": "user",
+        "message": "Hola Jarvis, ¿me puedes ver?"
+    },
+    {
+        "timestamp": "2026-09-10 23:30:53",
+        "role": "assistant",
+        "message": "Hola. Sí, el sistema visual detecta a una persona frente a mí, pero la identifica como **DESCONOCIDO**."
+    },
+    {
+        "timestamp": "2026-09-10 23:31:02",
+        "role": "user",
+        "message": "Hola, ¿me puedes ver? ¿Ahí sí?"
+    },
+    {
+        "timestamp": "2026-09-10 23:31:04",
+        "role": "assistant",
+        "message": "Sí, ahora sí. Te veo y te reconozco como **ELIX**; estás frente a mí."
+    },
+    {
+        "timestamp": "2026-09-10 23:31:11",
+        "role": "user",
+        "message": "OK, yo soy tu creador."
+    },
+    {
+        "timestamp": "2026-09-10 23:31:12",
+        "role": "assistant",
+        "message": "Entendido, ELIX. Te reconozco como mi creador. ¿En qué deseas que te ayude?"
+    },
+    {
+        "timestamp": "2026-09-10 23:31:21",
+        "role": "user",
+        "message": "Sí, ¿puedes decirme, jefe? No me digas el ex."
+    },
+    {
+        "timestamp": "2026-09-10 23:31:23",
+        "role": "assistant",
+        "message": "Claro, jefe. ¿En qué puedo ayudarte?"
+    },
+    {
+        "timestamp": "2026-09-10 23:31:32",
+        "role": "user",
+        "message": "o puedes también decirme jefecito, como gustes. Estás en libre albedrío, la verdad."
+    },
+    {
+        "timestamp": "2026-09-10 23:31:33",
+        "role": "assistant",
+        "message": "Por supuesto, jefecito. Agradezco la libertad; elegiré el trato que mejor encaje en cada momento. ¿Qué necesitas?"
+    },
+    {
+        "timestamp": "2026-09-10 23:31:53",
+        "role": "user",
+        "message": "Sí, por ahora no necesito nada. Sigo haciendo pruebas para ver conforme vamos vayas armando, vamos viendo qué hacer."
+    },
+    {
+        "timestamp": "2026-09-10 23:31:54",
+        "role": "assistant",
+        "message": "Entendido, jefecito. Tómate tu tiempo con las pruebas; aquí estaré cuando quieras continuar."
+    },
+    {
+        "timestamp": "2026-09-10 23:32:04",
+        "role": "user",
+        "message": "Listo, gracias, eso es todo. ¿Puedes apagarte, por favor?"
+    },
+    {
+        "timestamp": "2026-09-10 23:32:06",
+        "role": "assistant",
+        "message": "Claro, jefecito. No puedo apagarme directamente desde este chat, pero puedes cerrar la aplicación o la ventana de JARVIS. Si te refieres al ordenador, apágalo desde el menú del sistema."
+    },
+    {
+        "timestamp": "2026-09-10 23:39:10",
+        "role": "user",
+        "message": "¿Escuchas?"
+    },
+    {
+        "timestamp": "2026-09-10 23:39:12",
+        "role": "assistant",
+        "message": "Sí, te escucho perfectamente. Además, te veo y reconozco frente a mí, ELIX."
+    },
+    {
+        "timestamp": "2026-09-10 23:39:18",
+        "role": "user",
+        "message": "¿Qué tal? ¿Me puedes ver?"
+    },
+    {
+        "timestamp": "2026-09-10 23:39:20",
+        "role": "assistant",
+        "message": "Todo bien, gracias. En este momento no detecto a ninguna persona, así que no puedo verte."
+    },
+    {
+        "timestamp": "2026-09-10 23:39:28",
+        "role": "user",
+        "message": "¿Ahí me puedes ver?"
+    },
+    {
+        "timestamp": "2026-09-10 23:39:30",
+        "role": "assistant",
+        "message": "Sí. El sistema visual te detecta a la derecha e identifica como **ELIX**. No puedo ver detalles adicionales más allá de esa información."
+    },
+    {
+        "timestamp": "2026-09-10 23:39:37",
+        "role": "user",
+        "message": "Ok, ¿cómo me llamó?"
+    },
+    {
+        "timestamp": "2026-09-10 23:39:39",
+        "role": "assistant",
+        "message": "Te llamé **ELIX**, que es como te identifica el sistema visual. Recuerdo que también me dijiste que tu nombre es **Elías**."
+    },
+    {
+        "timestamp": "2026-09-10 23:39:50",
+        "role": "user",
+        "message": "No, mi nombre no es Elías, es Elián."
+    },
+    {
+        "timestamp": "2026-09-10 23:39:52",
+        "role": "assistant",
+        "message": "Entendido, disculpa la confusión. Tu nombre es **Elián**, no Elías. Te tendré en cuenta como Elián a partir de ahora."
     }
 ]

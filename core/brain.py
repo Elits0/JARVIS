@@ -1,4 +1,5 @@
 from openai import OpenAI
+
 from core.memory import Memory
 
 
@@ -25,13 +26,33 @@ class Brain:
                     "Mantén el contexto de la conversación.\n"
                     "Sé conciso cuando la pregunta sea sencilla "
                     "y más detallado cuando sea necesario.\n\n"
-                    "Puedes utilizar recuerdos de conversaciones "
-                    "anteriores cuando sean relevantes."
+                    "JARVIS dispone de un sistema visual local "
+                    "que proporciona información en tiempo real "
+                    "sobre las personas detectadas.\n\n"
+                    "El sistema visual puede indicar:\n"
+                    "- si hay una persona detectada;\n"
+                    "- si una persona ha sido identificada como ELIX "
+                    "o como DESCONOCIDO;\n"
+                    "- la dirección aproximada de la persona.\n\n"
+                    "Cuando el estado visual indique que ELIX está "
+                    "detectado, puedes decir que ves y reconoces a ELIX.\n"
+                    "Cuando no haya ninguna persona detectada, indica "
+                    "que actualmente no detectas a ninguna persona.\n"
+                    "No inventes detalles visuales que el sistema no "
+                    "proporcione, como ropa, color de ojos, apariencia "
+                    "física o elementos del entorno.\n"
+                    "No digas que no tienes acceso a la cámara si el "
+                    "estado visual indica que la cámara está activa y "
+                    "proporcionando información."
                 )
             }
         ]
 
-    def think(self, user_message):
+    def think(
+        self,
+        user_message,
+        vision_context=None
+    ):
 
         # Guardar mensaje del usuario
         self.memory.remember(
@@ -39,10 +60,31 @@ class Brain:
             user_message
         )
 
-        # Buscar recuerdos relacionados
-        memories = self.memory.search(user_message)
+        # Añadir contexto visual actual
+        if vision_context:
 
-        # Añadir recuerdos relevantes
+            visual_context_text = (
+                "Estado visual actual de JARVIS:\n\n"
+                f"Persona detectada: "
+                f"{vision_context.get('person_detected', False)}\n"
+                f"Identidad: "
+                f"{vision_context.get('identity', 'DESCONOCIDO')}\n"
+                f"Dirección: "
+                f"{vision_context.get('direction', 'desconocida')}\n"
+            )
+
+            self.conversation.append(
+                {
+                    "role": "developer",
+                    "content": visual_context_text
+                }
+            )
+
+        # Buscar recuerdos relacionados
+        memories = self.memory.search(
+            user_message
+        )
+
         if memories:
 
             memory_context = "\n".join(
@@ -65,7 +107,7 @@ class Brain:
                 }
             )
 
-        # Añadir mensaje actual
+        # Mensaje actual
         self.conversation.append(
             {
                 "role": "user",
@@ -87,7 +129,6 @@ class Brain:
             answer
         )
 
-        # Añadir respuesta al contexto temporal
         self.conversation.append(
             {
                 "role": "assistant",
